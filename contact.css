@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*============================================== scroll ==================================================*/
+
+
+
+/*============================================== Nav bar =================================================*/
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: whitesmoke;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+nav li {
+    height: auto;
+}
+
+nav a {
+    height: 100%;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    white-space: nowrap;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#contact {
+    border: 1.5px solid black;
+    margin-left: 275px; /* Consider a more responsive approach for spacing */
+    border-radius: 15px;
+    background-color: #1d538d;
+    padding: 5px 15px;
+}
+
+#contact a {
+    color: white; /* Ensure link text is white */
+    padding: 0; /* Remove extra link padding */
+}
+
+nav img {
+    height: 50px;
+    width: auto;
+    margin-right: 275px; /* Consider a more responsive approach for spacing */
+    margin-left: 50px;
+    object-fit: contain;
+}
+
+/*=============================================== Body ===================================================*/
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'lexend';
+    min-height: 100vh;
+    background-image: url(assets/set\ dining\ table.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
