@@ -54,7 +54,7 @@ nav a:hover {
 
 #contact {
     border: 1.5px solid black;
-    margin-left: 275px; /* Consider a more responsive approach for spacing */
+    margin-left: 275px;
     border-radius: 15px;
     background-color: #1d538d;
     padding: 5px 15px;
@@ -71,6 +71,10 @@ nav img {
     margin-right: 275px; /* Consider a more responsive approach for spacing */
     margin-left: 50px;
     object-fit: contain;
+}
+
+:target {
+    scroll-margin-top: 50px; /* Adjust this value based on your nav bar height */
 }
 
 /*=============================================== Main Content Sections ===================================================*/
@@ -106,7 +110,7 @@ section {
 
 #Home {
     background-color: white;
-    padding: 20px 15px 15px;
+    padding: 15px 15px 15px;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
     margin-top: 30px;
@@ -115,8 +119,8 @@ section {
     left: 50%;
     transform: translateX(-50%);
 
-    max-width: fit-content;
-    width: 90%;
+    max-width: fit-content; 
+    width: 80%;
     max-height: fit-content;
 }
 
@@ -270,10 +274,42 @@ section {
     }
 }
 
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #1d538d;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0.8;
+    transition: background 0.2s;
+}
 
+.slider-btn:hover {
+    background: #db84db;
+}
+
+.slider-btn.prev {
+    left: 10px;
+}
+
+.slider-btn.next {
+    right: 10px;
+}
+
+.slider {
+    position: relative; /* Needed for absolute positioning of buttons */
+}
 /*============================================== Footer =================================================*/
 
 .footer {
     background-color: lightgray;
-    min-height: 15vh;   
+    min-height: 15vh;
 }
+

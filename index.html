@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="./year.js"></script>
     <title>Best Events</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,13 +50,15 @@
                 </p>
             </div>
         </section>
-
+        <div class="Portfolio-anchor"></div>
         <section id="Portfolio">
             <div class="Portfolio_main">
+                <div id="Portfolio-anchor"></div>
                 <h1>Portfolio</h1>
                 <p>Here is some of our past work for you to look through!</p>
 
                 <div class="slider">
+                    <button class="slider-btn prev" aria-label="Previous">&#8592;</button> <!--The previous button-->
             <div class="slides">
                 <div id="slide-1">
                     <img src="./assets/P1_50.jpg" alt="A cardboard 50 filled with balloons">
@@ -80,6 +83,7 @@
                  <div id="slide-6">
                     <img src="./assets/P1_Wedding.jpg" alt="Some snacks and drinks on a table with nature in the background">
                 </div>
+                <button class="slider-btn next" aria-label="Next">&#8594;</button> <!--The next button-->
             </div>
             <a href="#slide-1"></a>
             <a href="#slide-2"></a>
@@ -89,15 +93,27 @@
             <a href="#slide-6"></a>
         </div>
         
-            </div>
-
-                    
+            </div>  
         </section>
 
-        <section class="footer">
-            <p>More content will go here to fill up the page.</p>
-        </section>
+        <footer>
+            <p>&copy; <span id="currentYear"></span> Best Events. All rights reserved.</p> 
+        </footer>
         
     </main>
+    <script>
+        const slides = document.querySelector('.slides');
+        const prevBtn = document.querySelector('.slider-btn.prev');
+        const nextBtn = document.querySelector('.slider-btn.next');
+        const slideWidth = slides.querySelector('div').offsetWidth + 50; // 50px margin-right
+
+        prevBtn.addEventListener('click', () => {
+            slides.scrollBy({ left: -slideWidth, behavior: 'smooth' });
+        });
+
+        nextBtn.addEventListener('click', () => {
+            slides.scrollBy({ left: slideWidth, behavior: 'smooth' });
+        });
+    </script>
 </body>
 </html>

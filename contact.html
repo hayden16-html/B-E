@@ -20,7 +20,34 @@
             <li id="contact"><a href="./contact.html">Contact</a></li>
         </ul>
     </nav>
-    <section>
-        <form action=""></form>
+    <main>
+    <section id="contact-section">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="tel">Phone:</label>
+        <input type="tel" id="tel" name="tel" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+    </form>
     </section>
+
+        <div class="contact-main">
+            <h2>Get in Touch</h2>
+            <p>Please fill out this form and we will respond as soon as possible.</p>
+        </div>
+    
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Best Events. All rights reserved.</p>
+    </footer>
+    </main>
 </body>
+</html>
