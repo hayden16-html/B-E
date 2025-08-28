@@ -1,2 +1,2 @@
 # B-E
-This is a school project to learn about basic front end
+This is a school project to learn about basic front end development. 

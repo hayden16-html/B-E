@@ -3,8 +3,7 @@
     margin: 0;
 }
 
-/*============================================== scroll ==================================================*/
-
+/*============================================== body ==================================================*/
 
 
 /*============================================== Nav bar =================================================*/
@@ -75,18 +74,25 @@ html, body {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     font-family: 'lexend';
     min-height: 100vh;
     background-image: url(assets/set\ dining\ table.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
 }
 
-
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 
 /*============================== Contact Form Styles ==============================*/
 
@@ -108,6 +114,7 @@ body {
 }
 
 #contact-form label {
+    font-family: 'lexend';
     display: block;
     margin-bottom: 8px;
     font-weight: 500;
@@ -116,6 +123,7 @@ body {
 
 #contact-form input,
 #contact-form textarea {
+    font-family: 'lexend';  
     width: 100%;
     box-sizing: border-box;
     padding: 10px 12px;
@@ -166,11 +174,4 @@ body {
 .contact-main h2 {
     padding-bottom: 10px;
     color: #1d538d;
-}
-
-/*============================================== Footer =================================================*/
-
-footer {
-    background-color: lightgray;
-    margin-top: 40vh;
 }
