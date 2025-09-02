@@ -3,15 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to main stylesheet -->
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+     <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Script for dynamic year in footer -->
     <script src="./year.js"></script>
     <title>Best Events</title>
 
+    <!-- Google Fonts: Lexend -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation Bar -->
     <nav>
         <ul>
             <img id="logo" src="./assets/Best_events_final_nbg-cropped.png" alt="logo">
@@ -23,33 +29,36 @@
     </nav>
 
     <main>
+        <!-- Home Section -->
         <div id="Home-background">
-        <section id="Home">
-            <div class="home-content">
-                <h1>Best Events</h1>
-                <p>
-                    Welcome to Best Events, the place that will make your dream party come to life.
-                    <br>
-                    We strive to create a wonderful experience for our customers.
-                    <br>
-                    Begin planning your event by, clicking the below:
-                </p>
-                <button id="h-contact"><a href="./contact.html">Click here</a></button>
-            </div>
-        </section>
+            <section id="Home">
+                <div class="home-content">
+                    <h1>Best Events</h1>
+                    <p><strong>
+                        Welcome to Best Events, the place that will make your dream party come to life.
+                        <br>
+                        We strive to create a wonderful experience for our customers.
+                        <br>
+                        Begin planning your event by, clicking the below:
+                    </strong></p>
+                    <button id="h-contact"><a href="./contact.html">Click here</a></button>
+                </div>
+            </section>
         </div>
+        <!-- About Us Section -->
         <section id="About_us">
             <div class="About_us_main">
                 <h1>About us</h1>
-                <p>
+                <p><strong>
                     We are a business that is located in Auckland, New Zealand.
                     <br>
-                    The most important thing to us is being able to communicate with our customers and create a good connection with everyone.
+                    The most important thing to us is being able to communicate with our customers and create a good connection.
                     <br>
-                    We are here to make sure you have the best event you could imagine.
-                </p>
+                    We are here to ensure your event is everything you asked for and more.
+                </strong></p>
             </div>
         </section>
+        <!-- Portfolio Section -->
         <div class="Portfolio-anchor"></div>
         <section id="Portfolio">
             <div class="Portfolio_main">
@@ -57,50 +66,59 @@
                 <h1>Portfolio</h1>
                 <p>Here is some of our past work for you to look through!</p>
 
+                <!-- Image Slider -->
                 <div class="slider">
-                    <button class="slider-btn prev" aria-label="Previous">&#8592;</button> <!--The previous button-->
-            <div class="slides">
-                <div id="slide-1">
-                    <img src="./assets/P1_50.jpg" alt="A cardboard 50 filled with balloons">
-                    <div class="author-info">Image by <a href="#">Your Name</a></div>
+                    <button class="slider-btn prev" aria-label="Previous">&#8592;</button> <!-- Previous button -->
+                    <div class="slides">
+                        <div id="slide-1">
+                            <img src="./assets/P1_50.jpg" alt="A cardboard 50 filled with balloons">
+                            <div class="author-info">Image by <a href="#">Your Name</a></div>
+                        </div>
+                        <div id="slide-2">
+                            <img src="./assets/P1_50_fruit_bowl.jpg" alt="A cardboard 50, covered with tinfoil and filled with fruit">
+                            <div class="author-info">Image by <a href="#">Another Artist</a></div>
+                        </div>
+                        <div id="slide-3">
+                            <img src="./assets/P1_Baby_Shower.jpg" alt="Tables with home made hot air balloons above them">
+                        </div>
+                        <div id="slide-4">
+                            <img src="./assets/P1_Bottles.jpg" alt="Bottles with faces as decorations on them">
+                        </div>
+                        <div id="slide-5">
+                            <img src="./assets/P1_Long_Table.jpg" alt="A table with white table cloth and small plants as decorations">
+                        </div>
+                        <div id="slide-6">
+                            <img src="./assets/P1_table.jpg" alt="A table with yellow colouring, filled with different food snacks">
+                        </div>
+                        <div id="slide-7">
+                            <img src="./assets/P1_Wedding.jpg" alt="Some snacks and drinks on a table with nature in the background">
+                        </div>
+                        <button class="slider-btn next" aria-label="Next">&#8594;</button> <!-- Next button -->
+                    </div>
+                    <!-- Navigation dots for slider -->
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                    <a href="#slide-4"></a>
+                    <a href="#slide-5"></a>
+                    <a href="#slide-6"></a>
+                    <a href="#slide-7"></a>
                 </div>
-                <div id="slide-2">
-                    <img src="./assets/P1_50_fruit_bowl.jpg" alt="A cardboard 50, covered with tinfoil and filled with fruit">
-                    <div class="author-info">Image by <a href="#">Another Artist</a></div>
-                </div>
-                <div id="slide-3">
-                    <img src="./assets/P1_Baby_Shower.jpg" alt="Tables with home made hot air balloons above them">
-                </div>
-                <div id="slide-4">
-                    <img src="./assets/P1_Bottles.jpg" alt="Bottles with faces as decorations on them">
-                </div>
-                <div id="slide-5">
-                    <img src="./assets/P1_Long_Table.jpg" alt="A table with white table cloth and small plants as decorations">
-                </div>
-                <div id="slide-6">
-                    <img src="./assets/P1_table.jpg" alt="A table with yellow colouring, filled with different food snacks">
-                </div>
-                 <div id="slide-6">
-                    <img src="./assets/P1_Wedding.jpg" alt="Some snacks and drinks on a table with nature in the background">
-                </div>
-                <button class="slider-btn next" aria-label="Next">&#8594;</button> <!--The next button-->
-            </div>
-            <a href="#slide-1"></a>
-            <a href="#slide-2"></a>
-            <a href="#slide-3"></a>
-            <a href="#slide-4"></a>
-            <a href="#slide-5"></a>
-            <a href="#slide-6"></a>
-        </div>
-        
             </div>  
         </section>
 
+        <!-- Footer Section -->
         <footer>
             <p>&copy; <span id="currentYear"></span> Best Events. All rights reserved.</p> 
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
         </footer>
         
     </main>
+    <!-- Slider navigation script -->
     <script>
         const slides = document.querySelector('.slides');
         const prevBtn = document.querySelector('.slider-btn.prev');
