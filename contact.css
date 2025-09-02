@@ -44,6 +44,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
+/* Highlight the contact link in nav */
 #contact {
     border: 1.5px solid black;
     margin-left: 275px; /* Consider a more responsive approach for spacing */
@@ -57,6 +58,7 @@ nav a:hover {
     padding: 0; /* Remove extra link padding */
 }
 
+/* Logo image styles */
 nav img {
     height: 50px;
     width: auto;
@@ -67,12 +69,14 @@ nav img {
 
 /*=============================================== Body ===================================================*/
 
+/* Set full height for html and body */
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
+/* Body layout and background */
 body {
     display: flex;
     flex-direction: column;
@@ -87,6 +91,7 @@ body {
     text-align: center;
 }
 
+/* Main content area styles */
 main {
     flex: 1;
     display: flex;
@@ -96,6 +101,7 @@ main {
 
 /*============================== Contact Form Styles ==============================*/
 
+/* Contact form section styles */
 #contact-section {
     background: rgba(255,255,255,0.85);
     max-width: 400px;
@@ -106,6 +112,7 @@ main {
     text-align: left;
 }
 
+/* Contact section heading */
 #contact-section h2 {
     text-align: center;
     margin-bottom: 24px;
@@ -113,6 +120,7 @@ main {
     font-size: 2rem;
 }
 
+/* Form label styles */
 #contact-form label {
     font-family: 'lexend';
     display: block;
@@ -121,6 +129,7 @@ main {
     color: #333;
 }
 
+/* Input and textarea styles */
 #contact-form input,
 #contact-form textarea {
     font-family: 'lexend';  
@@ -136,12 +145,14 @@ main {
     resize: none;
 }
 
+/* Focus styles for inputs and textarea */
 #contact-form input:focus,
 #contact-form textarea:focus {
     border-color: #1d538d;
     outline: none;
 }
 
+/* Submit button styles */
 #contact-form button {
     width: 100%;
     padding: 12px;
@@ -158,6 +169,9 @@ main {
     background: #163e6c;
 }
 
+/*============================== Additional Contact Info ==============================*/
+
+/* Extra contact info box styles */
 .contact-main {
     background-color: rgba(255,255,255,0.9);
     border: black solid 1px;
@@ -171,6 +185,7 @@ main {
     text-align: center;
 }
 
+/* Heading styles for extra contact info */
 .contact-main h2 {
     padding-bottom: 10px;
     color: #1d538d;
